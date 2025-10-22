@@ -51,8 +51,47 @@ const user = [
 ]
 
 user[1].email;
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+
+const course = {
+    courseName : "JavaScript in Hindi.",
+    courseInstructor : "Hitesh Choudhary",
+    price : 999
+}
+
+// Object Destructure :- 
+
+const {courseInstructor : Instructor } = course;
+
+// console.log(courseInstructor);
+console.log(Instructor);
+
+
+// Brief Intro of APIs :-
+
+//APIs Data deliver in JSON formate
+
+//Example :
+
+// {
+//     courseName : "Js in Hindi",
+//     coursePrice : 999,
+//     courseInstructor : "Hitesh"
+// }
+
+// In Array Formate
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
+// Famous APIs :-
+
+//1. Random User Me.
