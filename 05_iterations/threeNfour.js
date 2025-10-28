@@ -24,9 +24,31 @@ map.set('IN',"india"); //Holding Unique Values only
 
 // console.log(map);
 
-for (const [key,value] of map) {
-    console.log(key," :- ",value);
-}
+// for (const [key,value] of map) {
+//     console.log(key," :- ",value);
+// }
 
 // for of are not applicable on objects
+
+
+const myObject = {
+    js : "JavaScript",
+    cpp : "C++",
+    rb : "Ruby",
+    swift : "swift by Apple"
+}
+
+for (const key in myObject) {
+    // console.log(`${key} for shortcut values are : ${myObject[key]}`);
+}
+
+const programing = ['Js','Cpp','Java','Python','C'];
+
+for (const key in programing) {
+    console.log(programing[key]);
+}
+
+//Maps are not Iteratable, So we are not able to apply loops.
+//Objects : for-in, Array : for-of
+
 
